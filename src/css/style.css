@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Trade+Winds&display=swap');
+
+:root {
+    --primary-100: #F55D42;
+    --primary-90: #F57C42;
+    --primary-60: #F59B42;
+    --primary-30: #F5B642;
+    --primary-20: #F5CB42;
+    --primary-10: #F5C494;
+    --white: #F1EEE9;
+    --coolGray-100: #0F0804;
+    --coolGray-90: #21272A;
+    --coolGray-80: #343A3F;
+    --coolGray-70: #4D5358;
+    --coolGray-60: #697077;
+    --coolGray-50: #878D96;
+    --coolGray-40: #A2A9B0;
+    --coolGray-30: #C1C7CD;
+    --coolGray-20: #DDE1E6;
+    --coolGray-10: #F2F4F8;
+    --trade-winds: 'Trade Winds';
+    --kavivanar: 'Kavivanar';
+    --roboto: 'Roboto';
+    --font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 1. Generals */
+body {
+    font-size: var(--font-size);
+    font-family: var(--roboto);
+    background-color: var(--white);
+}
+
+img {
+    width: 100%;
+}
+
+ul li{
+    list-style: none;
+    list-style-type: none;
+}
+
+p {
+    color: var(--coolGray-70);
+}
+
+.tm-h1,
+h1 {
+    font-family: var(--trade-winds);
+    color: var(--coolGray-90);
+}
+
+.tm-h2,
+h2 {
+    font-family: var(--roboto);
+    font-size: 1.825rem;
+    font-weight: bold;
+}
+
+.tm-h6,
+h6 {
+    font-family: var(--kavivanar);
+    font-size: 0.8rem;
+}
+
+.tm-flex {
+    display: flex;
+}
+
+.tm-flex-between {
+    justify-content: space-between;
+}
+
+.tm-flex-end {
+    justify-content: flex-end;
+}
+
+.tm-blob-1 {
+    position: relative;
+}
+
+.tm-blob-1:not(.tm-slide) {
+    background: url('../img/blobs/blob-x.svg') center center/contain no-repeat;
+}
+
+/* 2. Texts */
+.tm-color-primary-100 {
+    color: var(--primary-100);
+}
+
+.tm-color-primary-90 {
+    color: var(--primary-90);
+}
+
+.tm-color-primary-60 {
+    color: var(--primary-60);
+}
+
+.tm-color-primary-30 {
+    color: var(--primary-30);
+}
+
+.tm-color-primary-20 {
+    color: var(--primary-20);
+}
+
+.tm-color-primary-10 {
+    color: var(--primary-10);
+}
+
+.tm-color-white {
+    color: var(--white);
+}
+
+.tm-color-coolGray-100 {
+    color: var(--coolGray-100);
+}
+
+.tm-color-coolGray-90 {
+    color: var(--coolGray-90);
+}
+
+.tm-color-coolGray-80 {
+    color: var(--coolGray-80);
+}
+
+.tm-color-coolGray-70 {
+    color: var(--coolGray-70);
+}
+
+.tm-color-coolGray-60 {
+    color: var(--coolGray-60);
+}
+
+.tm-color---coolGray-50 {
+    color: var(--coolGray-50);
+}
+
+.tm-color-coolGray-40 {
+    color: var(--coolGray-40);
+}
+
+.tm-color-coolGray-30 {
+    color: var(--coolGray-30);
+}
+
+.tm-color-coolGray-20 {
+    color: var(--coolGray-20);
+}
+
+.tm-color-coolGray-10 {
+    color: var(--coolGray-10);
+}
+
+.tm-font-family-roboto {
+    font-family: var(--roboto) !important;
+}
+
+.tm-font-family-kavivanar {
+    font-family: var(--kavivanar) !important;
+}
+
+.tm-font-family-trade-winds {
+    font-family: var(--trade-winds) !important;
+}
+
+.tm-font-24 {
+    font-size: 1.1rem !important;
+}
+
+.tm-text-contrast {
+    color: var(--coolGray-10);
+}
+
+/* 3. Blocks */
+.tm-block {
+    padding: 80px;
+}
+
+.tm-block-default {
+    background-color: var(--primary-60);
+}
+
+.tm-block-secondary {
+    background-color: var(--primary-30);
+}
+
+/* 4. Footer */
+.tm-footer {
+    background-color: var(--coolGray-80);
+}
+
+/* 5. Navbar */
+.tm-navbar {
+    position: fixed;
+    top: 1rem;
+    left: 5%;
+    z-index: 9999;
+    width: 90%;
+    padding: 16px 24px;
+    background-color: rgba(242,244,248, 0.1);
+    backdrop-filter: blur(24px);
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25), 
+                4px 8px 32px rgba(0,0,0,0.25);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tm-navbar-nav {
+    display: none;
+}
+
+@media only screen and (min-width: 769px) {
+    .tm-navbar-nav {
+        display: flex;
+        justify-items: center;
+    }
+}
+
+.tm-navbar .tm-navbar-nav li {
+    list-style: none;
+    list-style-type: none;
+    padding: 8px 16px;
+}
+
+.tm-navbar a {
+    color: var(--coolGray-90);
+    font-family: var(--kavivanar);
+    text-decoration: none;
+}
+
+.tm-navbar .tm-navbar-logo .tm-logo {
+    font-size: 1.5rem;
+    line-height: 0;
+    margin-bottom: 0;
+}
+
+.tm-navbar .tm-navbar-logo .tm-logo-subtitle {
+    font-size: 0.625rem;
+    text-align: right;
+    margin-top: 0;
+}
+
+.tm-navbar .tm-navbar-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tm-navbar-menu-burger {
+    color: var(--coolGray-100);
+}
+
+/* 6. Margins */
+.tm-margin-top {
+    margin-top: 16px;
+}
+
+.tm-margin-small-right {
+    margin-right: 0.5rem;
+}
+
+/* 7. Buttons */
+.tm-button {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 0.5rem 1.1rem;
+    border: none;
+    background-color: var(--coolGray-30);
+    color: var(--coolGray-70);
+    font-family: var(--roboto);
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.tm-button-primary {
+    background-color: var(--coolGray-100);
+    color: var(--coolGray-10);
+}
+
+.tm-button .tm-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* x. Slide */
+.tm-slide {
+    position: relative;
+}
+
+.tm-slide-nav {
+    font-family: var(--trade-winds);
+    font-size: 1rem;
+    padding: 24px 0;
+    margin-top: 1rem;
+}
+
+.tm-slide-nav > ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3em;
+    text-align: center;
+}
+
+.tm-slide-nav img {
+    height: 80px;
+}
+
+.tm-slide-title-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.tm-slide-content {
+    text-align: right;
+}
+
+.tm-slide-content p {
+    font-size: 0.825rem;
+}
+
+.tm-slide-title {
+    font-size: 3.5rem;
+}
+
+.tm-slide.tm-blob-1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 750px;
+    transform: translate(-50%, -50%);
+    background: url('../img/blobs/blob-x.svg') center center/contain no-repeat;
+    z-index: -2;
+}
+
+
+/* x2. Ids */
+#top-hero {
+    min-height: 100dvh;
+    min-width: 100dvw;
+    margin: 0;
+    padding: 6rem 2.5rem 0 2.5rem;
+}
