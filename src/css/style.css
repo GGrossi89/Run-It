@@ -60,6 +60,11 @@ a {
     text-decoration: none;
 }
 
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 blockquote p{
     font-family: var(--kavivanar);
     font-size: 3rem;
@@ -113,6 +118,10 @@ h6 {
     justify-content: center;
 }
 
+.tm-flex-around {
+    justify-content: space-around;
+}
+
 .tm-flex-middle {
     align-items: center;
 }
@@ -142,6 +151,19 @@ h6 {
 
     .tm-grid-2fr-1fr {
         grid-template-columns: 2fr 1fr;
+    }
+
+    .tm-grid-1fr {
+        grid-template-columns: 50% 50%;
+    }
+
+    .tm-grid-1fr-x4 {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+
+    .tm-grid-between {
+        justify-content: space-between;
+        align-content: space-between;
     }
 }
 
@@ -174,6 +196,15 @@ h6 {
 
 .tm-brands img {
     height: 80px;
+}
+
+.tm-icons {
+    margin-right: 1rem;
+}
+
+.tm-icons img {
+    height: 40px;
+    width: 40px;
 }
 
 /* 2. Texts */
@@ -319,11 +350,32 @@ h6 {
 /* 4. Footer */
 .tm-footer {
     background-color: var(--coolGray-80);
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-area: 2rem;
-
+    color: var(--coolGray-20);
 }
+
+.tm-footer a {
+    color:  var(--coolGray-40);
+}
+
+.tm-footer p {
+    color: var(--coolGray-50);
+}
+
+.tm-footer .tm-logo-subtitle {
+    font-size: 0.3rem;
+}
+.tm-footer .tm-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tm-footer .tm-input {
+    height: 1rem;
+    width: 100%;
+    padding: 1.5rem 0.5rem;
+}
+
 
 /* 5. Navbar */
 .tm-navbar {
@@ -702,7 +754,21 @@ h6 {
 }
 
 
-/* x5. Animations */
+/* x5. Forms */
+.tm-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+
+}
+
+.tm-input {
+    height: 1rem;
+    width: 100%;
+    padding: 1.5rem 0.5rem;
+}
+
+/* x6. Animations */
 @keyframes slide-left {
     0% {transform: translateX(-100%);}
     100% { transform: translateX(0);}
