@@ -22,6 +22,10 @@
     --kavivanar: 'Kavivanar';
     --roboto: 'Roboto';
     --font-size: 16px;
+    --bp-xl: 1600px;
+    --bp-l: 1200px;
+    --bp-m: 960px;
+    --bp-s: 640px;
 }
 
 * {
@@ -82,6 +86,7 @@ h6 {
 
 .tm-flex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .tm-flex-between {
@@ -217,10 +222,22 @@ h6 {
     text-align: right;
 }
 
+@media screen and (min-width:  960px) {
+    .tm-text-right-l {
+        text-align: right;
+    }
+}
+
 /* 3. Blocks */
 .tm-block {
-    padding: 80px;
+    padding: 1.5em;
     overflow: hidden;
+}
+
+@media screen and (min-width:  960px) {
+    .tm-block {
+        padding: 80px;
+    }
 }
 
 .tm-block-default {
@@ -242,6 +259,10 @@ h6 {
 /* 4. Footer */
 .tm-footer {
     background-color: var(--coolGray-80);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-area: 2rem;
+
 }
 
 /* 5. Navbar */
@@ -266,7 +287,7 @@ h6 {
     display: none;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width:  960px) {
     .tm-navbar-nav {
         display: flex;
         align-items: center;
@@ -343,6 +364,18 @@ h6 {
     height: 1rem;
 }
 
+/* 8. Images */
+.tm-mask-blob-x {
+    mask-image: url('../img/blobs/blob-x.svg');
+    mask-position: center center;
+    mask-repeat: no-repeat;
+    mask-size: 50%;
+}
+
+.tm-max-240 {
+    max-width: 240px;
+}
+
 /* x. Slide */
 .tm-slide {
     position: relative;
@@ -359,8 +392,14 @@ h6 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 3em;
     text-align: center;
+    gap: 1em;
+}
+
+@media screen and (min-width:  960px) {
+    .tm-slide-nav > ul {
+        gap: 3em;
+    }
 }
 
 .tm-slide-nav img {
@@ -447,7 +486,16 @@ h6 {
     min-height: 100dvh;
     min-width: 100dvw;
     margin: 0;
-    padding: 6rem 2.5rem 0 2.5rem;
+    padding: 6rem 1.5rem 0 1.5rem;
+}
+
+@media screen and (min-width: 960px) {
+    #top-hero {
+        min-height: 100dvh;
+        min-width: 100dvw;
+        margin: 0;
+        padding: 6rem 2.5rem 0 2.5rem;
+    }   
 }
 
 
@@ -472,7 +520,7 @@ h6 {
     animation: scrolling 16s linear infinite;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width:  960px) {
     .tm-categories-slider > ul {
         animation: slide-left 4s linear;
     }
