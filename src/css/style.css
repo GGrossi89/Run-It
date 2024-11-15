@@ -105,6 +105,25 @@ h6 {
     gap: 1rem;
 }
 
+@media screen and (min-width: 450px) {
+    .tm-grid {
+        display: grid;
+        gap: 2rem;
+        row-gap: 2rem;
+    }
+
+    .tm-grid-1fr-2fr {
+        grid-template-columns: 1fr 2fr;
+        justify-items: center;  
+        align-items: center;  
+    }
+
+    .tm-grid-2fr-1fr {
+        grid-template-columns: 2fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+}
 .tm-blob-1,
 .tm-blob-2,
 .tm-blob-3,
@@ -123,6 +142,11 @@ h6 {
 }
 .tm-blob-4:not(.tm-slide) {
     background: url('../img/blobs/blob-4.svg') center center/contain no-repeat;
+}
+
+.tm-youtube-portait {
+    width: 250px;
+    height: 650px;
 }
 
 /* 2. Texts */
@@ -210,6 +234,14 @@ h6 {
     font-size: 1.1rem !important;
 }
 
+.tm-font-32 {
+    font-size: 2rem !important;
+}
+
+.tm-font-48 {
+    font-size: 3rem;
+}
+
 .tm-text-contrast {
     color: var(--coolGray-10);
 }
@@ -242,6 +274,7 @@ h6 {
 
 .tm-block-default {
     background-color: var(--primary-60);
+    color: var(--coolGray-10);
 }
 
 .tm-block-secondary {
@@ -338,6 +371,10 @@ h6 {
     margin-right: 0.5rem;
 }
 
+.tm-margin-small-left {
+    margin-left: 0.5rem;
+}
+
 /* 7. Buttons */
 .tm-button {
     display: flex;
@@ -367,6 +404,20 @@ h6 {
 /* 8. Images */
 .tm-mask-blob-x {
     mask-image: url('../img/blobs/blob-x.svg');
+    mask-position: center center;
+    mask-repeat: no-repeat;
+    mask-size: 50%;
+}
+
+.tm-mask-blob-2 {
+    mask-image: url('../img/blobs/blob-2.svg');
+    mask-position: center center;
+    mask-repeat: no-repeat;
+    mask-size: 50%;
+}
+
+.tm-mask-blob-3 {
+    mask-image: url('../img/blobs/blob-3.svg');
     mask-position: center center;
     mask-repeat: no-repeat;
     mask-size: 50%;
