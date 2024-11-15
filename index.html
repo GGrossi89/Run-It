@@ -112,24 +112,30 @@
             <nav class="tm-slide-nav">
                 <ul class="tm-flex tm-flex-between">
                     <li>
-                        <img class="tm-blob-1" src="./src/img/sneakers.png" alt="RACE R-24">
-                        <p>RACE R-24</p>
+                        <a href="">
+                            <img class="tm-blob-1" src="./src/img/sneakers.png" alt="RACE R-24">
+                            <p>RACE R-24</p>
+                        </a>
                     </li>
                     
                     <li>
-                        <img class="tm-blob-2" src="./src/img/jacket.png" alt="JACKET J-11">
-                        <p>JACKET J-11</p>
+                        <a href="">
+                            <img class="tm-blob-2" src="./src/img/jacket.png" alt="JACKET J-11">
+                            <p>JACKET J-11</p>
+                        </a>
                     </li>
                     
                     <li>
-                        <img class="tm-blob-3" src="./src/img/t-shirt.png" alt="T-SHIRT T-09">
-                        <p>T-SHIRT T-09</p>
+                        <a href="">
+                            <img class="tm-blob-3" src="./src/img/t-shirt.png" alt="T-SHIRT T-09">
+                            <p>T-SHIRT T-09</p>
+                        </a>
                     </li>
                 </ul>
             </nav>
         </section>
 
-        <section class="tm-block tm-blob-2 tm-grid tm-grid-1fr-2fr">
+        <section class="tm-block tm-blob-2 tm-grid tm-grid-1fr-2fr tm-flex-middle">
             <div>
                 <h6 class="tm-h6">connect with the nature</h6>
                 
@@ -156,14 +162,13 @@
         </section>
         
         <main class="tm-block">
-            <article>
-                <header class="tm-text-center tm-text-right-l">
-                    <h2 class="tm-h2">Most Wanted</h2>
-                    <h3 class="tm-font-family-kavivanar">Interdum sollicitudin tortor viverra porta consequat in.</h3>
-                </header>
-            </article>
+            <div class="tm-text-center tm-text-cener">
+                <h2 class="tm-h2">Most Wanted</h2>
+                <h3 class="tm-font-family-kavivanar">Interdum sollicitudin tortor viverra porta consequat in.</h3>
+            </div>
 
-            <div class="tm-flex tm-flex-between tm-flex-end tm-flex-gap tm-flex-shrink tm-margin-top">
+            <div class="tm-flex tm-flex-between tm-flex-center tm-flex-gap tm-flex-shrink tm-margin-top">
+            
                 <article class="tm-blob-1">
                     <header class="tm-text-center">
                         <img class="tm-max-240" src="./src/img/sneakers.png" alt="Sneakers" srcset="">
@@ -201,64 +206,50 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <img class="tm-blob-1" src="./src/img/sneakers.png" alt="RACE R-24">
+                            <img class="tm-blob-1" src="/src/img/categories/sneakers.png" alt="Sneakers">
                             <p>SNEAKERS</p>
                         </a>
                     </li>
                     
                     <li> 
                         <a href="#">
-                            <img class="tm-blob-2" src="./src/img/jacket.png" alt="JACKET J-11">
+                            <img class="tm-blob-2" src="/src/img/categories/jacket.png" alt="Jackets">
                             <p>JACKETS</p>
                         </a>
                     </li>
                     
                     <li>
                         <a href="#">
-                            <img class="tm-blob-3" src="./src/img/t-shirt.png" alt="T-SHIRT T-09">
+                            <img class="tm-blob-3" src="/src/img/categories/t-shirt.png" alt="Shirts">
                             <p>SHIRTS</p>
                         </a>
                     </li>
                     
                     <li>
                         <a href="#">
-                            <img class="tm-blob-1" src="./src/img/sneakers.png" alt="RACE R-24">
+                            <img class="tm-blob-1" src="/src/img/categories/cap.png" alt="Caps">
                             <p>CAPS</p>
                         </a>
                     </li>
                     
                     <li>
                          <a href="#">
-                            <img class="tm-blob-2" src="./src/img/jacket.png" alt="JACKET J-11">
+                            <img class="tm-blob-2" src="/src/img/categories/basket.png" alt="Sports">
                             <p>SPORTS</p>
                          </a>
                     </li>
                     
                     <li>
                         <a href="#">
-                            <img class="tm-blob-3" src="./src/img/t-shirt.png" alt="T-SHIRT T-09">
+                            <img class="tm-blob-3" src="/src/img/categories/shorts.png" alt="Shorts">
                             <p>SHORTS</p>
                         </a>
                     </li>
                     
                     <li>
                         <a href="#">
-                            <img class="tm-blob-1" src="./src/img/sneakers.png" alt="RACE R-24">
+                            <img class="tm-blob-1" src="/src/img/categories/accesories.png" alt="Accesories">
                             <p>ACCSORIES</p>
-                        </a>
-                    </li>
-                    
-                    <li>
-                         <a href="#">
-                            <img class="tm-blob-2" src="./src/img/jacket.png" alt="JACKET J-11">
-                            <p>JACKET J-11</p>
-                         </a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">
-                            <img class="tm-blob-3" src="./src/img/t-shirt.png" alt="T-SHIRT T-09">
-                            <p>T-SHIRT T-09</p>
                         </a>
                     </li>
                 </ul>
@@ -266,14 +257,23 @@
         </section>
         
         <section class="tm-block tm-block-default">
-            <div class="tm-grid tm-grid-1fr-2fr">
-                <div>
+            <div class="tm-grid tm-grid-1fr-2fr tm-flex-middle tm-flex-center">
+                <div class="tm-margin-bottom">
                     <h3 class="tm-font-family-trade-winds tm-font-32">THE MOMENT OF YOUR LIFE</h3>
                     <p>Sed sed massa urna. Nulla id nisl vel ante condimentum ullamcorper.</p>
+
+                    <div>
+                        <a href="#" class="tm-button tm-button-primary">
+                            Let's Start
+                            <span class="material-symbols-outlined tm-margin-small-left">
+                            arrow_right_alt
+                            </span>
+                        </a>
+                    </div>
                 </div>
                 
                 <div>
-                    <iframe class="tm-youtube-portait" src="https://www.youtube.com/embed/EGKpIOVDXEc" 
+                    <iframe class="tm-youtube-portait" src="https://www.youtube.com/embed/AbnjSelQYV8" 
                         title="Even Ronaldinho was left amazed by this Teqball rally 🙌 #Shorts" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -283,7 +283,7 @@
             </div>
         </section>
         
-        <section class="tm-block tm-blob-3 tm-grid tm-grid-2fr-1fr">
+        <section class="tm-block tm-blob-3 tm-grid tm-grid-2fr-1fr tm-flex-middle">
             <div>
                 <img class="tm-mask-blob-2" src="/src/img/women-soccer.jpg" alt="">
             </div>
@@ -309,16 +309,380 @@
             </div>
         </section>
 
-        <section class="tm-block tm-block-secondary">
-            
-        </section>
-
-        <section class="tm-block tm-block-default">
-
-        </section>
-
         <section class="tm-block">
+            <div class="tm-comments">
+                <ul>
+                    <li>
+                        <article class="tm-card">
+                            <header class="tm-grid tm-grid-2fr-1fr tm-flex-middle">
+                                <h3 class="tm-card-title">John Doe</h3>
+                                
+                                <div>
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                </div> 
+                            </header>
+                            
+                            <div class="tm-card-body">
+                                <p>Sed sodales ex tempor, accumsan arcu a, pharetra dolor. 
+                                    Pellentesque congue odio ut massa vestibulum, non scelerisque ligula dignissim. 
+                                    Etiam vitae est sit amet risus volutpat pulvinar. 
+                                    Duis commodo tincidunt vestibulum.</p>
+                                  
+                            </div>
+                        </article>
+                    </li>
+                    
+                    <li>
+                        <article class="tm-card">
+                            <header class="tm-grid tm-grid-2fr-1fr tm-flex-middle">
+                                <h3 class="tm-card-title">Jane Doe</h3>
+                                
+                                <div>
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                </div>    
+                            </header>
+                            
+                            <div class="tm-card-body">
+                                <p>Sed sodales ex tempor, accumsan arcu a, pharetra dolor. 
+                                    Pellentesque congue odio ut massa vestibulum, non scelerisque ligula dignissim. 
+                                    Etiam vitae est sit amet risus volutpat pulvinar. 
+                                    Duis commodo tincidunt vestibulum.</p>
+                             
+                            </div>
+                        </article>
+                    </li>
+                    
+                    <li>
+                        <article class="tm-card">
+                            <header class="tm-grid tm-grid-2fr-1fr tm-flex-middle">
+                                <h3 class="tm-card-title">Juan García</h3>
+                                
+                                <div>
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                </div>
+                            </header>
+                            
+                            <div class="tm-card-body">
+                                <p>Sed sodales ex tempor, accumsan arcu a, pharetra dolor. 
+                                    Pellentesque congue odio ut massa vestibulum, non scelerisque ligula dignissim. 
+                                    Etiam vitae est sit amet risus volutpat pulvinar. 
+                                    Duis commodo tincidunt vestibulum.</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="tm-card">
+                            <header class="tm-grid tm-grid-2fr-1fr tm-flex-middle">
+                                <h3 class="tm-card-title">John Doe</h3>
+                                
+                                <div>
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                </div> 
+                            </header>
+                            
+                            <div class="tm-card-body">
+                                <p>Sed sodales ex tempor, accumsan arcu a, pharetra dolor. 
+                                    Pellentesque congue odio ut massa vestibulum, non scelerisque ligula dignissim. 
+                                    Etiam vitae est sit amet risus volutpat pulvinar. 
+                                    Duis commodo tincidunt vestibulum.</p>
+                                  
+                            </div>
+                        </article>
+                    </li>
+                    
+                    <li>
+                        <article class="tm-card">
+                            <header class="tm-grid tm-grid-2fr-1fr tm-flex-middle">
+                                <h3 class="tm-card-title">Jane Doe</h3>
+                                
+                                <div>
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                </div>    
+                            </header>
+                            
+                            <div class="tm-card-body">
+                                <p>Sed sodales ex tempor, accumsan arcu a, pharetra dolor. 
+                                    Pellentesque congue odio ut massa vestibulum, non scelerisque ligula dignissim. 
+                                    Etiam vitae est sit amet risus volutpat pulvinar. 
+                                    Duis commodo tincidunt vestibulum.</p>
+                             
+                            </div>
+                        </article>
+                    </li>
+                    
+                    <li>
+                        <article class="tm-card">
+                            <header class="tm-grid tm-grid-2fr-1fr tm-flex-middle">
+                                <h3 class="tm-card-title">Juan García</h3>
+                                
+                                <div>
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                </div>
+                            </header>
+                            
+                            <div class="tm-card-body">
+                                <p>Sed sodales ex tempor, accumsan arcu a, pharetra dolor. 
+                                    Pellentesque congue odio ut massa vestibulum, non scelerisque ligula dignissim. 
+                                    Etiam vitae est sit amet risus volutpat pulvinar. 
+                                    Duis commodo tincidunt vestibulum.</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="tm-card">
+                            <header class="tm-grid tm-grid-2fr-1fr tm-flex-middle">
+                                <h3 class="tm-card-title">John Doe</h3>
+                                
+                                <div>
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                </div> 
+                            </header>
+                            
+                            <div class="tm-card-body">
+                                <p>Sed sodales ex tempor, accumsan arcu a, pharetra dolor. 
+                                    Pellentesque congue odio ut massa vestibulum, non scelerisque ligula dignissim. 
+                                    Etiam vitae est sit amet risus volutpat pulvinar. 
+                                    Duis commodo tincidunt vestibulum.</p>
+                                  
+                            </div>
+                        </article>
+                    </li>
+                    
+                    <li>
+                        <article class="tm-card">
+                            <header class="tm-grid tm-grid-2fr-1fr tm-flex-middle">
+                                <h3 class="tm-card-title">Jane Doe</h3>
+                                
+                                <div>
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                </div>    
+                            </header>
+                            
+                            <div class="tm-card-body">
+                                <p>Sed sodales ex tempor, accumsan arcu a, pharetra dolor. 
+                                    Pellentesque congue odio ut massa vestibulum, non scelerisque ligula dignissim. 
+                                    Etiam vitae est sit amet risus volutpat pulvinar. 
+                                    Duis commodo tincidunt vestibulum.</p>
+                             
+                            </div>
+                        </article>
+                    </li>
+                    
+                    <li>
+                        <article class="tm-card">
+                            <header class="tm-grid tm-grid-2fr-1fr tm-flex-middle">
+                                <h3 class="tm-card-title">Juan García</h3>
+                                
+                                <div>
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined tm-color-primary-20">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                    
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                </div>
+                            </header>
+                            
+                            <div class="tm-card-body">
+                                <p>Sed sodales ex tempor, accumsan arcu a, pharetra dolor. 
+                                    Pellentesque congue odio ut massa vestibulum, non scelerisque ligula dignissim. 
+                                    Etiam vitae est sit amet risus volutpat pulvinar. 
+                                    Duis commodo tincidunt vestibulum.</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
+        <section class="tm-block tm-block-default tm-text-center">
+            <p class="tm-font-family-kavivanar">PARTNERS</p>
+            <h2 class="tm-font-family-trade-winds">Embrace the power of working with the best of the world in sports cloth</h2>
+            
+            <ul class="tm-flex tm-flex-center tm-flex-middle tm-flex-gap tm-brands">
+                <li><img style="height: 95px;" src="./src/img/Partners/nike.svg" alt="nike logo"></li>
+                <li><img style="height: 45px;" src="./src/img/Partners/lotto-sport-italia-seeklogo.svg" alt="loto logo"></li>
+                <li><img style="height: 200px;" src="./src/img/Partners/adidas.png" alt="adidas logo"></li>
+                <li><img style="height: 200px;" src="./src/img/Partners/puma.png" alt="puma logo"></li>
+                <li><img style="height: 150px;" src="./src/img/Partners/arsenal-f-c-seeklogo.svg" alt="arsenal logo"></li>
+                <li><img style="height: 85px;" src="./src/img/Partners/premier.svg" alt="premier logo"></li>
+            </ul>
+        </section>
+
+        <section class="tm-block tm-flex tm-flex-between tm-flex-middle">
+            <blockquote>
+                <p>“Just play. Have fun. Enjoy the game.”</p>
+                
+                <footer>
+                    <cite>Michael Jordan</cite>
+                </footer>
+            </blockquote>
+
+            <div>
+                <a href="#" class="tm-button tm-button-primary">
+                    Let's Start
+                    <span class="material-symbols-outlined tm-margin-small-left">
+                    arrow_right_alt
+                    </span>
+                </a>
+            </div>
         </section>
 
         <footer class="tm-block tm-footer">
