@@ -81,9 +81,10 @@ blockquote footer cite {
 h1 {
     font-family: var(--trade-winds);
     color: var(--coolGray-90);
-    font-size: clamp(1.4rem, 3dvw, 2.625rem);
-    line-height: clamp(1.5rem, 3dvw, 2.825rem);
+    font-size: clamp(1.4rem, 5dvw, 5rem);
+    line-height: clamp(1.5rem, 5dvw, 5rem);
     font-weight: bold;
+    margin: 1.5rem 0;
 }
 
 .tm-h2,
@@ -330,6 +331,16 @@ h6 {
     }
 }
 
+.tm-block-large {
+    padding: 100px;
+}
+
+@media screen and (min-width:  960px) {
+    .tm-block-large {
+        padding: 20rem 10rem;
+    }
+}
+
 .tm-block-default {
     background-color: var(--primary-60);
     color: var(--coolGray-10);
@@ -439,6 +450,33 @@ h6 {
 
 .tm-navbar-menu-burger {
     color: var(--coolGray-100);
+}
+
+.tm-nav {
+    border: 1px solid var(--coolGray-70);
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+
+.tm-nav li a {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-family: var(--kavivanar);
+    font-size: 1.2rem;
+    color: var(--coolGray-50);
+}
+
+.tm-nav li a:hover {
+    color: var(--primary-100);
+    transition: 1s;
+}
+
+.tm-nav li{
+    border-bottom: 1px solid var(--coolGray-40);
+}
+
+.tm-nav li:last-child {
+    border-bottom: none;
 }
 
 /* 6. Margins */
