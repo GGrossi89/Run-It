@@ -177,16 +177,16 @@ h6 {
 }
 
 .tm-blob-1:not(.tm-slide) {
-    background: url('/src/img/blobs/blob-x.svg') center center/contain no-repeat;
+    background: url('../img/blobs/blob-x.svg') center center/contain no-repeat;
 }
 .tm-blob-2:not(.tm-slide) {
-    background: url('/src/img/blobs/blob-2.svg') center center/contain no-repeat;
+    background: url('../img/blobs/blob-2.svg') center center/contain no-repeat;
 }
 .tm-blob-3:not(.tm-slide) {
-    background: url('/src/img/blobs/blob-3.svg') center center/contain no-repeat;
+    background: url('../img/blobs/blob-3.svg') center center/contain no-repeat;
 }
 .tm-blob-4:not(.tm-slide) {
-    background: url('/src/img/blobs/blob-4.svg') center center/contain no-repeat;
+    background: url('../img/blobs/blob-4.svg') center center/contain no-repeat;
 }
 
 .tm-youtube-portait {
@@ -531,21 +531,21 @@ h6 {
 
 /* 8. Images */
 .tm-mask-blob-x {
-    mask-image: url('/src/img/blobs/blob-x.svg');
+    mask-image: url('../img/blobs/blob-x.svg');
     mask-position: center center;
     mask-repeat: no-repeat;
     mask-size: 50%;
 }
 
 .tm-mask-blob-2 {
-    mask-image: url('/src/img/blobs/blob-2.svg');
+    mask-image: url('../img/blobs/blob-2.svg');
     mask-position: center center;
     mask-repeat: no-repeat;
     mask-size: 50%;
 }
 
 .tm-mask-blob-3 {
-    mask-image: url('/src/img/blobs/blob-3.svg');
+    mask-image: url('../img/blobs/blob-3.svg');
     mask-position: center center;
     mask-repeat: no-repeat;
     mask-size: 50%;
@@ -644,7 +644,7 @@ h6 {
     width: 100%;
     height: 750px;
     transform: translate(-50%, -50%);
-    background: url('/src/img/blobs/blob-x.svg') center center/contain no-repeat;
+    background: url('../img/blobs/blob-x.svg') center center/contain no-repeat;
     z-index: -2;
 }
 
@@ -665,7 +665,7 @@ h6 {
     width: 100%;
     height: 750px;
     transform: translate(-50%, -50%);
-    background: url('/src/img/blobs/blob-2.svg') center center/contain no-repeat;
+    background: url('../img/blobs/blob-2.svg') center center/contain no-repeat;
     z-index: -2;
 }
 
@@ -677,7 +677,7 @@ h6 {
     width: 100%;
     height: 750px;
     transform: translate(-50%, -50%);
-    background: url('/src/img/blobs/blob-3.svg') center center/contain no-repeat;
+    background: url('../img/blobs/blob-3.svg') center center/contain no-repeat;
     z-index: -2;
 }
 
@@ -689,7 +689,7 @@ h6 {
     width: 100%;
     height: 750px;
     transform: translate(-50%, -50%);
-    background: url('/src/img/blobs/blob-4.svg') center center/contain no-repeat;
+    background: url('../img/blobs/blob-4.svg') center center/contain no-repeat;
     z-index: -2;
 }
 
@@ -776,7 +776,7 @@ h6 {
 /* 12. Cards */
 .tm-card {
     padding: 2rem;
-    background-image: url('/src/img/blobs/blob-4.svg'), 
+    background-image: url('../img/blobs/blob-4.svg'), 
         linear-gradient(165deg, var(--coolGray-100), var(--coolGray-90));
     background-repeat: no-repeat;
     background-position: 150% -130%;
@@ -811,7 +811,7 @@ h6 {
 
 /* 14. Backgrounds */
 .tm-bg-forest {
-    background-image: url('/src/img/forest-with-brume.jpg');
+    background-image: url('../img/forest-with-brume.jpg');
     background-size: cover;
     background-position: center center;
 }
