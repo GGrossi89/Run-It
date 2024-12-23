@@ -18,29 +18,13 @@
             
                 <ul class="tm-navbar-nav">
                     <li>
-                        <a href="#">Soccer</a>
+                        <a href="../../index.html">Home</a>
                     </li>   
-                    
+
                     <li>
-                        <a href="#">Women</a>
+                        <a class="tm-active" href="#">Products</a>
                     </li>   
-                    
-                    <li>
-                        <a href="#">Man</a>
-                    </li>   
-                    
-                    <li>
-                        <a href="#">Outlet</a>
-                    </li>   
-                    
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    
+
                     <li>
                         <a href="contact-us.html">Contact us</a>
                     </li>
@@ -63,7 +47,7 @@
                         </a>
                     </div>
                     
-                    <div class="tm-navbar-menu-burger">
+                    <div class="tm-navbar-menu-burger tm-hidden-large">
                         <a href="#">
                             <span class="material-symbols-outlined">
                                 menu
@@ -92,21 +76,22 @@
                     </nav>
                 </div>
 
-                <div class="tm-flex tm-flex-between tm-flex-wrap tm-flex-gap">
+                <div id="productos" class="tm-flex tm-flex-between tm-flex-wrap tm-flex-gap">
                     <article class="tm-blob-1">
                         <header class="tm-text-center">
                             <img class="tm-max-240" src="../img/sneakers.png" alt="Sneakers" srcset="">
                             <h2 class="tm-font-family-trade-winds tm-font-24">RACE R-24</h2>
                         </header>
                         <p class="tm-text-center">Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+                        <p class="tm-text-center">Stock: <span id="stock-sneakers" >10</span></p>
 
                         <div>
-                            <a href="#" class="tm-button tm-button-primary">
+                            <button onclick="agregarAlCarrito('Sneakers', 800, 'sneakers')" class="tm-button tm-button-primary">
                                 <span class="material-symbols-outlined tm-margin-small-right">
                                 add
                                 </span>
                                     Order Now
-                            </a>
+                            </button>
                         </div>
 
                     </article>
@@ -117,14 +102,15 @@
                             <h2 class="tm-font-family-trade-winds tm-font-24">JACKET J-11</h2>
                         </header>
                         <p class="tm-text-center">Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+                        <p class="tm-text-center">Stock: <span id="stock-jacket" >10</span></p>
 
                         <div>
-                            <a href="#" class="tm-button tm-button-primary">
+                            <button onclick="agregarAlCarrito('Jacket 11', 1000, 'jacket')" class="tm-button tm-button-primary">
                                 <span class="material-symbols-outlined tm-margin-small-right">
                                 add
                                 </span>
                                     Order Now
-                            </a>
+                            </button>
                         </div>
 
                     </article>
@@ -135,122 +121,15 @@
                             <h2 class="tm-font-family-trade-winds tm-font-24">T-SHIRT T-09</h2>
                         </header>
                         <p class="tm-text-center">Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+                        <p class="tm-text-center">Stock: <span id="stock-tshirts" >10</span></p>
 
                         <div>
-                            <a href="#" class="tm-button tm-button-primary">
+                            <button onclick="agregarAlCarrito('T-Shirt', 3500, 'tshirts')" class="tm-button tm-button-primary">
                                 <span class="material-symbols-outlined tm-margin-small-right">
                                 add
                                 </span>
                                     Order Now
-                            </a>
-                        </div>
-
-                    </article>
-                    
-                    <article class="tm-blob-1">
-                        <header class="tm-text-center">
-                            <img class="tm-max-240" src="../img/sneakers.png" alt="Sneakers" srcset="">
-                            <h2 class="tm-font-family-trade-winds tm-font-24">RACE R-24</h2>
-                        </header>
-                        <p class="tm-text-center">Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
-
-                        <div>
-                            <a href="#" class="tm-button tm-button-primary">
-                                <span class="material-symbols-outlined tm-margin-small-right">
-                                add
-                                </span>
-                                    Order Now
-                            </a>
-                        </div>
-
-                    </article>
-                    
-                    <article class="tm-blob-2">
-                        <header class="tm-text-center">
-                            <img class="tm-max-240" src="../img/jacket.png" alt="Jackets" srcset="">
-                            <h2 class="tm-font-family-trade-winds tm-font-24">JACKET J-11</h2>
-                        </header>
-                        <p class="tm-text-center">Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
-
-                        <div>
-                            <a href="#" class="tm-button tm-button-primary">
-                                <span class="material-symbols-outlined tm-margin-small-right">
-                                add
-                                </span>
-                                    Order Now
-                            </a>
-                        </div>
-
-                    </article>
-                    
-                    <article class="tm-blob-3">
-                        <header class="tm-text-center">
-                            <img class="tm-max-240" src="../img/t-shirt.png" alt="T-Shirts" srcset="">
-                            <h2 class="tm-font-family-trade-winds tm-font-24">T-SHIRT T-09</h2>
-                        </header>
-                        <p class="tm-text-center">Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
-
-                        <div>
-                            <a href="#" class="tm-button tm-button-primary">
-                                <span class="material-symbols-outlined tm-margin-small-right">
-                                add
-                                </span>
-                                    Order Now
-                            </a>
-                        </div>
-
-                    </article>
-                    
-                    <article class="tm-blob-1">
-                        <header class="tm-text-center">
-                            <img class="tm-max-240" src="../img/sneakers.png" alt="Sneakers" srcset="">
-                            <h2 class="tm-font-family-trade-winds tm-font-24">RACE R-24</h2>
-                        </header>
-                        <p class="tm-text-center">Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
-
-                        <div>
-                            <a href="#" class="tm-button tm-button-primary">
-                                <span class="material-symbols-outlined tm-margin-small-right">
-                                add
-                                </span>
-                                    Order Now
-                            </a>
-                        </div>
-
-                    </article>
-                    
-                    <article class="tm-blob-2">
-                        <header class="tm-text-center">
-                            <img class="tm-max-240" src="../img/jacket.png" alt="Jackets" srcset="">
-                            <h2 class="tm-font-family-trade-winds tm-font-24">JACKET J-11</h2>
-                        </header>
-                        <p class="tm-text-center">Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
-
-                        <div>
-                            <a href="#" class="tm-button tm-button-primary">
-                                <span class="material-symbols-outlined tm-margin-small-right">
-                                add
-                                </span>
-                                    Order Now
-                            </a>
-                        </div>
-
-                    </article>
-                    
-                    <article class="tm-blob-3">
-                        <header class="tm-text-center">
-                            <img class="tm-max-240" src="../img/t-shirt.png" alt="T-Shirts" srcset="">
-                            <h2 class="tm-font-family-trade-winds tm-font-24">T-SHIRT T-09</h2>
-                        </header>
-                        <p class="tm-text-center">Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
-
-                        <div>
-                            <a href="#" class="tm-button tm-button-primary">
-                                <span class="material-symbols-outlined tm-margin-small-right">
-                                add
-                                </span>
-                                    Order Now
-                            </a>
+                            </button>
                         </div>
 
                     </article>
@@ -348,5 +227,32 @@
                 </div>
             </div>
     </footer>
+
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Subtotal: $<span id="subtotal-carrito">0</span></p>
+        <p>Descuento: $<span id="descuento-carrito">0</span></p>
+        <p>IVA (21%): $<span id="iva-carrito">0</span></p>
+        <p><strong>Total: $<span id="total-carrito">0</span></strong></p>
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+        <button onclick="mostrarCheckout()">Checkout</button>
+    </div>
+
+    <!-- Modal de Checkout -->
+    <div id="checkout-modal">
+        <div class="checkout-content">
+            <h2>Finalizar Compra</h2>
+            <p>Subtotal: $<span id="modal-subtotal">0</span></p>
+            <p>Descuento: $<span id="modal-descuento">0</span></p>
+            <p>IVA: $<span id="modal-iva">0</span></p>
+            <p><strong>Total a Pagar: $<span id="modal-total">0</span></strong></p>
+            <button onclick="realizarCompra()">Confirmar Compra</button>
+            <button onclick="cerrarCheckout()">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="/src/js/main.js"></script>
+
     </body>
 </html>

@@ -102,6 +102,20 @@ h6 {
     font-size: clamp(0.7rem, 3dvw, 1rem);
 }
 
+.tm-hidden {
+    display: none;
+}
+
+@media screen and (min-width: 769px) {
+    .tm-hidden-large {
+        display: none;
+    }
+}
+
+.tm-block {
+    display: block;
+}
+
 .tm-flex {
     display: flex;
     flex-wrap: wrap;
@@ -421,13 +435,27 @@ h6 {
 .tm-navbar .tm-navbar-nav li {
     list-style: none;
     list-style-type: none;
-    padding: 8px 16px;
+    padding: 0.2rem .2rem;
 }
 
 .tm-navbar a {
     color: var(--coolGray-90);
     font-family: var(--kavivanar);
     text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.tm-navbar-nav a:hover {
+    background-color: var(--coolGray-90);
+    border-radius: 8px;
+    color: var(--coolGray-10);
+    transition: background-color 0.5s ease-in;
+}
+
+.tm-navbar-nav .tm-active {
+    background-color: var(--coolGray-90);
+    color: var(--coolGray-10);
+    border-radius: 8px;
 }
 
 .tm-navbar .tm-navbar-logo .tm-logo {
@@ -556,6 +584,16 @@ h6 {
 }
 
 /* 9. Slide */
+.tm-slideshow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100dvw;
+    transition: 3s ease-in-out;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
 .tm-slide {
     position: relative;
 }
@@ -604,7 +642,7 @@ h6 {
     filter: drop-shadow(5px 10px 15px rgba(0,0,0,0.6));
 }
 
-.tm-slide-title-container {
+.tm-slide-title-container .tm-slide-title {
     position: absolute;
     left: 50%;
     top: 12%;
@@ -615,6 +653,15 @@ h6 {
     align-items: center;
     justify-content: center;
     padding: 0;
+}
+
+.tm-slide-title-container {
+    width: 100dvw;
+    flex: 0 0 100%;
+    position: relative;
+    aspect-ratio: 16/9;
+    scroll-snap-align: start;
+    animation: slide-left 1s linear;
 }
 
 .tm-slide-content {
@@ -701,7 +748,7 @@ h6 {
     margin: 0;
     padding: 6rem 1.5rem 0 1.5rem;
     overflow: hidden;
-    position: relative;
+    position: relative;    
 }
 
 @media screen and (min-width: 960px) {
